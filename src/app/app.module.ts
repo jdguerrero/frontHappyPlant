@@ -11,6 +11,7 @@ import { SignInUserComponent } from './components/all-user-view/sign-in-user/sig
 import { UserViewComponent } from './components/user-view/user-view.component';
 import { UserNavComponent } from './components/user-view/user-nav/user-nav.component';
 import { UserHomeComponent } from './components/user-view/user-home/user-home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -29,7 +30,8 @@ import { UserHomeComponent } from './components/user-view/user-home/user-home.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
