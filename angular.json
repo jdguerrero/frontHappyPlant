@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "frontHappyPlant"
+  "defaultProject": "frontHappyPlant",
+  "cli": {
+    "analytics": false
+  }
 }

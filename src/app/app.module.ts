@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { ActualPlantaComponent } from './components/actual-planta/actual-planta.component';
+import {PlantService} from '../app/services/plant.service';
 
 
 
@@ -26,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SignInUserComponent,
     UserViewComponent,
     UserNavComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    ActualPlantaComponent
 
   ],
   imports: [
@@ -38,7 +41,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
    
   ],
-  providers: [],
+  providers: [PlantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

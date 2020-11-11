@@ -7,8 +7,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AllUserViewComponent } from './components/all-user-view/all-user-view.component';
 import { LoginComponent } from './components/all-user-view/login/login.component';
 import { SignInUserComponent } from './components/all-user-view/sign-in-user/sign-in-user.component';
+/**
+ * testeo de kuro
+ */
 
-
+import {ActualPlantaComponent} from '../app/components/actual-planta/actual-planta.component';
 
 
 
@@ -20,6 +23,7 @@ const routes: Routes = [
   {path: "home", component: AllUserViewComponent},
   {path: "ingresar", component: LoginComponent},
   {path: "registrarse", component: SignInUserComponent},
+  {path: "plantaPrimerRegistro", component: ActualPlantaComponent}
 
 ];
 
