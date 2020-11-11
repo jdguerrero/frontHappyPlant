@@ -12,6 +12,8 @@ import { UserNavComponent } from './components/user-view/user-nav/user-nav.compo
 import { UserHomeComponent } from './components/user-view/user-home/user-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -31,7 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

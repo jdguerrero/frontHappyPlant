@@ -18,8 +18,8 @@ import { SignInUserComponent } from './components/all-user-view/sign-in-user/sig
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},
   {path: "home", component: AllUserViewComponent},
-  {path: "registrarse", component: LoginComponent},
-  {path: "ingresar", component: SignInUserComponent},
+  {path: "ingresar", component: LoginComponent},
+  {path: "registrarse", component: SignInUserComponent},
 
 ];
 

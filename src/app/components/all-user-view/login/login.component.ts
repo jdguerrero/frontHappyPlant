@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Propietario } from '../../../models/Propietor.model';
+import { PropietorService} from '../../../services/propietor.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,49 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  username: string;
+  password: string;
+  permitido: boolean;
+  propietario : Propietario;
 
-  ngOnInit(): void {
+  constructor(private propietorService:PropietorService) {
+
+    this.permitido = false;
+    this.propietario = new Propietario();
   }
 
+  hide = true;
+
+  ngOnInit(): void {
+    
+  }
+
+  validar(){
+
+ 
+    //get de objeto Usuario por username
+    this.propietorService.getUserByUsername(this.username).subscribe(Response=>{
+
+      let user = Response;
+
+      /**
+       * cast response a Usuario
+       */
+      this.propietario.nombrePropietario = user.nombrePropietario;
+      this.propietario.fechaRegistro = user.fechaRegistro;
+      this.propietario.fotoPerfil = user.fotoPerfil;
+      this.propietario.email = user.email;
+      this.propietario.usuario = user.usuario;
+      this.propietario.pass = user.pass;
+      });
+
+      if(this.password == this.propietario.pass){
+        this.permitido = true;
+        
+      }
+
+    
+    console.log(this.propietario);
+
+  }
 }
