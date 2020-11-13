@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Propietario } from '../../../models/Propietor.model';
 import { PropietorService} from '../../../services/propietor.service';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit {
   permitido: boolean;
   propietario : Propietario;
 
-  constructor(private propietorService:PropietorService) {
+  constructor(private propietorService:PropietorService, private route: ActivatedRoute,
+    private router: Router) {
 
     this.permitido = false;
     this.propietario = new Propietario();
@@ -37,6 +39,7 @@ export class LoginComponent implements OnInit {
       /**
        * cast response a Usuario
        */
+      this.propietario.idPropietario = user.idPropietario;
       this.propietario.nombrePropietario = user.nombrePropietario;
       this.propietario.fechaRegistro = user.fechaRegistro;
       this.propietario.fotoPerfil = user.fotoPerfil;
@@ -47,7 +50,7 @@ export class LoginComponent implements OnInit {
 
       if(this.password == this.propietario.pass){
         this.permitido = true;
-        
+        this.router.navigate(['/propietario/'+ this.propietario.idPropietario]);
       }
 
     
