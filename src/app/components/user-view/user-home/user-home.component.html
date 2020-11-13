@@ -12,16 +12,25 @@
 <div class="container">
     <div class="row" >  
       <div class="col-sm-12 col-md-6 col-lg-4 p-3 " *ngFor="let planta of plantas">
-        <div class="card text-center">
 
-            <img src="{{planta.fotoPlanta}}" class="card-img-top imgCard" alt="...">
-        
+        <div class="card text-center">
+            <img src="{{planta.fotoPlanta}}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">{{planta.nombrePlanta}}</h5>
-<!--                 <a href="/civilizacion/{{civilizacion.idCivilizacion}}" class="btn btn-primary">Ver más</a> -->
+              <h5 class="card-title">{{planta.nombrePlanta}}</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Especie: {{planta.especie}}</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Ver Datos</a>
+              <a href="#" class="card-link">Gestionar</a>
             </div>
           </div>
-      </div>
+
+
+                
+<!--            <a href="/civilizacion/{{civilizacion.idCivilizacion}}" class="btn btn-primary">Ver más</a> -->
+       
   
   </div>
 </div>

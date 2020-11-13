@@ -20,7 +20,7 @@ export class PlantService {
 
   getPlantById(id: string): Observable <any> {
 
-    let url = this._urlPlantas +'/log/' + id;
+    let url = this._urlPlantas + id;
 
     let headers = new HttpHeaders().set(
       'Type-Content','aplication/json'
@@ -31,22 +31,23 @@ export class PlantService {
     });
 
   }
+
+
+  getPlantsByPropietario(idPropietario: string): Observable <any> {
+
+    let url = this._urlPlantas + "/getByUser/" + idPropietario;
+
+    return this.http.get(url);   
+
+  }
+
+
   getAllinfo(): Observable <any> {
     return this.http.get<Planta>(this._urlPlantas);    
   }
-  getPlantBySpecies(Species: string): Observable <any> {
 
-    let url = this._urlPlantas +'/log/' + Species;
 
-    let headers = new HttpHeaders().set(
-      'Type-Content','aplication/json'
-    )
-
-    return this.http.get(url, {
-      headers: headers
-    });
-
-  }
+ 
 
 
 

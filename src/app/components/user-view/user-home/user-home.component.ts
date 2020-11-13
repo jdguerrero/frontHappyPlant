@@ -44,11 +44,11 @@ export class UserHomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.plantService.getAllinfo().subscribe( response  => {
+    this.plantService.getPlantsByPropietario(this.id).subscribe( response  => {
     
-      let list = response;
-      
-      this.plantas = list["data"];
+      this.plantas = response;
+
+      console.log(this.plantas);
         
     });
 
