@@ -5,4 +5,24 @@
       <h1 class="display-4">Bienvenido {{propietario.nombrePropietario}}</h1>
       <p class="lead">En el siguiente modulo podrás gestionar tus plantiamigas</p>
     </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row" >  
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3 " *ngFor="let planta of plantas">
+        <div class="card text-center">
+
+            <img src="{{planta.fotoPlanta}}" class="card-img-top imgCard" alt="...">
+        
+            <div class="card-body">
+                <h5 class="card-title">{{planta.nombrePlanta}}</h5>
+<!--                 <a href="/civilizacion/{{civilizacion.idCivilizacion}}" class="btn btn-primary">Ver más</a> -->
+            </div>
+          </div>
+      </div>
+  
   </div>
+</div>
+
