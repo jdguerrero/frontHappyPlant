@@ -51,6 +51,8 @@ export class LoginComponent implements OnInit {
       if(this.password == this.propietario.pass){
         this.permitido = true;
         this.router.navigate(['/propietario/'+ this.propietario.idPropietario]);
+      }else{
+        alert("Usuario o contraseña incorrecta");
       }
 
     

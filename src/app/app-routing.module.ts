@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: "home", component: AllUserViewComponent},
   {path: "ingresar", component: LoginComponent},
   {path: "registrarse", component: SignInUserComponent},
-  {path: "plantaPrimerRegistro", component: ActualPlantaComponent},
+  {path: "plantas", component: ActualPlantaComponent},
   {path: "propietario/:id", component: UserViewComponent}
 ];
 
