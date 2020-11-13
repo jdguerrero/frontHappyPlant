@@ -14,8 +14,6 @@ import { UserViewComponent } from './components/user-view/user-view.component';
 
 import {ActualPlantaComponent} from '../app/components/actual-planta/actual-planta.component';
 
-
-
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},
   {path: "home", component: AllUserViewComponent},
