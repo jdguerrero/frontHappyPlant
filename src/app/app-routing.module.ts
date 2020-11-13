@@ -14,14 +14,13 @@ import {RegistrarPlantaComponent} from './components/user-view/registrar-planta/
  * testeo de kuro
  */
 
-import {ActualPlantaComponent} from '../app/components/actual-planta/actual-planta.component';
+
 
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},
   {path: "home", component: AllUserViewComponent},
   {path: "ingresar", component: LoginComponent},
   {path: "registrarse", component: SignInUserComponent},
-  {path: "plantas", component: ActualPlantaComponent},
   {path: "propietario/:id", component: UserViewComponent},
   {path: "registrarPlanta/:id", component: RegistrarPlantaComponent}
 ];
