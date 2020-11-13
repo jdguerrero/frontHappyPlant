@@ -4,7 +4,7 @@ import { Propietario } from '../../../models/Propietor.model';
 import { PlantService } from '../../../services/plant.service';
 import { PropietorService } from '../../../services/propietor.service';
 
-import { ActivatedRoute } from '@angular/router';
+import {  ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user-home',

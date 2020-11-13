@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Propietario } from '../../../models/Propietor.model';
 import { PropietorService} from '../../../services/propietor.service';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',

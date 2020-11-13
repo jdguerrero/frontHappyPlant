@@ -4,5 +4,4 @@ export class Planta{
     fotoPlanta: string;
     especie: string;
     idPropietario: string;
-    fecha:string;
 }
