@@ -1,3 +1,21 @@
 .mu{
     box-shadow: -6px 6px 6px -3px black;
+    color: #000000;
+}
+.navbar{
+    box-shadow: -6px 6px 6px -3px black;
+    background-color:  #4817b3;
+
+}
+.nav-link{
+    color:  #ffffff;
+
+}
+.navbar-brand{
+    color:  #ffffff;
+
+}
+.navbarNavDropdown{
+    background-color:  #ffffff;
+
 }

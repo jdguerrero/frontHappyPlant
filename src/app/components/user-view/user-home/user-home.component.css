@@ -1,14 +1,20 @@
 .mu{
-    background-color: #f0f4c3;
-    box-shadow: 0px 5px 7px -2px #000000;
+    background-color: #14c4ff;
+    box-shadow: 0px 5px 12px 2px #3cc7f5;
 }
 
 .card{
-    background-color: #9ccc65;
-    box-shadow:-5px -5px 7px -2px #000000;
+    background-color: white;
+    box-shadow:-5px -5px 7px -2px #093847fb;
 }
 
 .list-group-item{
-    background-color: #9ccc65;
+    background-color: white;
+}
+.card-link{
+    color: rgb(14, 7, 46);
+}
+.card-title{
+    color: #178bb3;
 }
 

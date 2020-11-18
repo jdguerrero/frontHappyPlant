@@ -3,7 +3,7 @@
 <div class="container contForm text-center">
     <div class="row">
         <div class="col-sm-12 p-3">
-            <h2>Iniciar Sesión</h2>
+            <h2 class="mainTittle">Iniciar Sesión</h2>
             <hr>
             <div class="container">
                 <form>
@@ -15,7 +15,7 @@
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" required>
                     </div>
-                    <button type="button" class="btn btn-primary" (click)="validar()" >Iniciar Sesión</button>
+                    <button type="button" class="btn" (click)="validar()" >Iniciar Sesión</button>
                   </form>
             </div>
         </div>
