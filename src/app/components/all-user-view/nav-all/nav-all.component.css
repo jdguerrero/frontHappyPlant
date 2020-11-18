@@ -4,15 +4,15 @@
 }
 .navbar{
     box-shadow: -6px 6px 6px -3px black;
-    background-color:  #4817b3;
+    background-color:  #178bb3;
 
 }
 .nav-link{
-    color:  #ffffff;
+    color:  black;
 
 }
 .navbar-brand{
-    color:  #ffffff;
+    color:  #000000;
 
 }
 .navbarNavDropdown{
