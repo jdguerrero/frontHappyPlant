@@ -9,8 +9,25 @@
 .tituloHappyplant{
     text-align: center;
     color: #4817B3;
+    font-family: 'Freestyle Script';
+    font-size: 400%;
 }
 .btn{
     background-color: #5e14ff;
     color: #ffffff;
+    font: menu;
+    font-family: 'consolas';
+    font-size: 100%;
+}
+.card-title{
+    font-family: 'Ink Free';
+    font-size: 200%;
+}
+.card-text{
+    font-family: 'Adobe Fangsong Std';
+    color: black;
+}
+.lead{
+    font-family: 'Adobe Fangsong Std';
+    color: black;
 }

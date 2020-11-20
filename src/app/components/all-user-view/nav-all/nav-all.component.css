@@ -4,16 +4,22 @@
 }
 .navbar{
     box-shadow: -6px 6px 6px -3px black;
-    background-color:  #178bb3;
+    background-color:  #14c4ff;
 
 }
 .nav-link{
     color:  black;
-
+    font: menu;
+    font-size: 220%;
+    
+    font-family: 'Freestyle Script';
 }
 .navbar-brand{
     color:  #000000;
 
+    font: menu;
+    font-size: 300%;
+    font-family: 'Freestyle Script';
 }
 .navbarNavDropdown{
     background-color:  #ffffff;

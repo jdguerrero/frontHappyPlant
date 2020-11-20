@@ -5,9 +5,16 @@
 }
 .nav-link{
     color: black;
+    font: menu;
+    font-size: 220%;
+    
+    font-family: 'Freestyle Script';
 
 }
 .navbar-brand{
     color:  black;
+    font: menu;
+    font-size: 300%;
+    font-family: 'Freestyle Script';
 
 }
