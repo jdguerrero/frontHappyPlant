@@ -7,7 +7,7 @@ import { Registro } from '../models/Dispositivo.model';
 })
 export class DispositivoService {
 
-    API_URI = 'http://localhost:3000';
+    API_URI = 'https://happyplantbackend.herokuapp.com';
     dispositivos = 'dispositivos';
     registros = 'registroD/planta';
 
