@@ -1,0 +1,53 @@
+<app-user-nav></app-user-nav>
+<div class="jumbotron jumbotron-fluid mu">
+    <div class="container">
+        <h1 class="display-4">Últimas Estadísicas </h1>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col">
+            <div class="card"> 
+                <div class="card-body" >
+                    <h5 class="card-title">Histórico Temperatura</h5>
+                    <app-line-chart></app-line-chart>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Hístorico Longitud</h5>
+                    <app-line-chart-longitud></app-line-chart-longitud>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Comparativo Humedad en la Tierra</h5>
+                    <app-bar-chart-humedadtierra></app-bar-chart-humedadtierra>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Otros Datos</h5>
+                    <app-pie-chart-humedad-ambiente></app-pie-chart-humedad-ambiente>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

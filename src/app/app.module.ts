@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {PlantService} from '../app/services/plant.service';
 import { RegistrarPlantaComponent } from './components/user-view/registrar-planta/registrar-planta.component';
+import { DashboardComponent } from './components/user-view/estadisticas-planta/dashboard/dashboard.component';
+import { LineChartComponent } from './components/user-view/estadisticas-planta/line-chart/line-chart.component';
+import { DispositivoService } from './services/dispositivo.service';
+import { LineChartLongitudComponent } from './components/user-view/estadisticas-planta/line-chart-longitud/line-chart-longitud.component';
+import { BarChartHumedadtierraComponent } from './components/user-view/estadisticas-planta/bar-chart-humedadtierra/bar-chart-humedadtierra.component';
+import { PieChartHumedadAmbienteComponent } from './components/user-view/estadisticas-planta/pie-chart-humedad-ambiente/pie-chart-humedad-ambiente.component';
+
+
 
 
 
@@ -28,7 +37,13 @@ import { RegistrarPlantaComponent } from './components/user-view/registrar-plant
     UserViewComponent,
     UserNavComponent,
     UserHomeComponent,
-    RegistrarPlantaComponent
+    RegistrarPlantaComponent,
+    DashboardComponent,
+    LineChartComponent,
+    LineChartLongitudComponent,
+    BarChartHumedadtierraComponent,
+    PieChartHumedadAmbienteComponent
+
 
   ],
   imports: [
@@ -37,10 +52,11 @@ import { RegistrarPlantaComponent } from './components/user-view/registrar-plant
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ChartsModule
    
   ],
-  providers: [PlantService],
+  providers: [PlantService, DispositivoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
